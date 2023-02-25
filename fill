@@ -1,1 +1,17 @@
-THE ROYAL BENGAL TIGER
+Attaching WS m/c to chef-server:-
+After drag and drop chef-repo from window to linux using winscp, we have to open WS m/c.
+                     Command
+1)To check and go inside chef-repo
+           ls
+          cd chef-repo
+2)To check and go inside .chef
+          ls -a
+          cd .chef
+3)To check and open config.rb
+          ls
+          cat config.rb
+config.rb is the knife file and these store url of chef-server
+4)To check wheather WS m/c is connected or not to server
+          knife ssl check
+ 
+
