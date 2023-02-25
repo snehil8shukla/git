@@ -1,0 +1,18 @@
+Attaching Node m/c to chef-server
+1)Attaching node to chef-server is called bootstrap
+2)Both WS M/C and node should be in same AZ
+3)All work must be done inside chef-repo
+4)Two action will be done whilw bootstrapping
+     1)Installing package to node
+     2)adding node to server
+5)BOOTSTRAPPING
+ 
+1)Go inside WSm/c
+2) To check and go inside chef-repo
+            ls
+           cd chef-repo
+3)To check and run bootstrap
+    knife bootstrap <public IP address of node m/c> --ssh -user ec2-user --sudo -i <keypair of node in pem> -N <node name>
+4)To see list of node m/c which are present in server
+       knife node list
+
